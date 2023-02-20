@@ -1,0 +1,40 @@
+:root {
+    --danger: #FF3E41;
+    --secondary: #51CFED;
+    --light: #F8F2F0;
+    --dark: #060315;
+}
+
+
+
+.aboutsectio_container{
+    padding: 10rem 0 10rem 0;
+
+    .image{
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-items{
+        padding: 0 5rem 0 2rem;
+        h6{
+            color: var(--secondary);
+            font-weight: bolder;
+        }
+        h1{
+            font-weight: bolder;
+            width: 80%;
+            margin-bottom: 2rem;
+            color: var(--dark);
+        }
+        .col-sm-6{
+            .icon{
+                color: var(--danger);
+            }
+            h5{
+                font-weight:800;
+                color: var(--dark);
+            }
+        }
+    }
+}

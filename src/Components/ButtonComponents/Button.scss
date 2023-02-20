@@ -1,0 +1,38 @@
+:root {
+    --danger: #FF3E41;
+    --secondary: #51CFED;
+    --light: #F8F2F0;
+    --dark: #060315;
+}
+
+.default{
+    padding: 15px;
+    width: 100%;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer !important;
+    color: var(--light);
+    opacity: 6;
+}
+
+.danger{
+    background-color: var(--danger);
+    transition: 0.5s;
+    cursor: pointer !important;
+}
+
+.danger:hover{
+    background-color: #eb9697;
+    transition: 0.5s;
+}
+
+.primary{
+    background-color: var(--secondary);
+    transition: 0.5s;
+}
+
+.primary:hover{
+    background-color: #a8deec;
+    transition: 0.5s;
+
+}

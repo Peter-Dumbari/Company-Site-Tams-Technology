@@ -1,0 +1,53 @@
+:root {
+    --danger: #FF3E41;
+    --secondary: #51CFED;
+    --light: #F8F2F0;
+    --dark: #060315;
+}
+
+.somfactsContainer{
+    margin-bottom: 10rem !important;
+    padding: 0 4rem 0 4rem;
+
+    .first_column{
+        padding: 2rem;
+        h6{
+            color: var(--secondary);
+            font-weight: 800;
+        }
+        h1{
+            color: var(--dark);
+            font-weight: 700;
+        }
+        .icon_box{
+            .icon{
+                background-color: var(--danger);
+                color: var(--light) !important;
+            }
+            h6{
+                color: var(--dark) !important;
+                font-weight: 800;
+                font-size: 90%;
+            }
+
+            h3{
+                color: var(--danger);
+                font-weight: 800;
+            }
+        }
+    }
+
+    .second_column{
+        padding: 1.9rem;
+
+        .row{
+            justify-content: center;
+            align-items: center;
+
+            .first_row_second{
+                margin-top: 1.4rem;
+            }
+
+        }
+    }
+}

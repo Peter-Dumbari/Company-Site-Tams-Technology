@@ -1,0 +1,39 @@
+:root {
+    --danger: #FF3E41;
+    --secondary: #51CFED;
+    --light: #F8F2F0;
+    --dark: #060315;
+    --sucess: #198754;
+}
+
+.card{
+    border: none !important;
+    padding: 1.5rem;
+    background-color: gray;
+    border-radius: 0 !important;
+    color: var(--light);
+    .icon_container{
+        .icon{
+            font-size: 2.1rem;
+            margin-bottom: 0.5rem;
+        }
+    }
+    .number{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+}
+
+
+.success_card{
+    background-color: var(--sucess);
+}
+
+.danger_card{
+    background-color: var(--danger);
+}
+
+.primary_card{
+    background-color: var(--secondary);
+}

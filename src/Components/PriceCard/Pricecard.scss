@@ -1,0 +1,55 @@
+.price_container {
+  box-shadow: 0 0 45px rgba(0, 0, 0, 0.07);
+  position: relative;
+
+  .head {
+    padding: 1.5rem;
+  }
+  .header_container {
+    .price_name {
+      font-weight: 800;
+      color: var(--primary);
+    }
+    .smalldollar {
+      font-size: 22px;
+      line-height: 45px;
+      font-weight: 700;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    .month {
+      font-size: 16px;
+      line-height: 40px;
+      font-weight: 800;
+    }
+    h1 {
+      font-weight: 700;
+      color: var(--dark);
+    }
+  }
+
+  .line {
+    margin: 0 !important;
+    color: gray;
+  }
+
+  .card_body {
+    padding: 1.5rem;
+
+    .item_list {
+      margin-bottom: 1.2rem;
+
+      .icon {
+        font-weight: bolder !important;
+      }
+
+      span {
+        color: gray;
+      }
+    }
+  }
+}
+.price_container:hover .read_more_box {
+  left: -20%;
+  padding-left: 3rem;
+}
