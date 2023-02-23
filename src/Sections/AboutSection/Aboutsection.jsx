@@ -6,7 +6,7 @@ import Button from "../../Components/ButtonComponents/Button";
 function Aboutsection() {
   return (
     <div className="row aboutsectio_container">
-      <div className="col-6">
+      <div className="col-6 image_container">
         <img src={image} alt="techguy" className="image" />
       </div>
       <div className="col-6 about-items">

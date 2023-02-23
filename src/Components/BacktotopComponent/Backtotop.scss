@@ -1,0 +1,18 @@
+.fWohKN {
+  font-size: 20px;
+  background-color: var(--primary);
+  height: 45px;
+  width: 45px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 !important;
+  color: var(--light);
+  transition: 1s;
+}
+
+.fWohKN:hover {
+  background-color: var(--light);
+  color: var(--primary);
+}

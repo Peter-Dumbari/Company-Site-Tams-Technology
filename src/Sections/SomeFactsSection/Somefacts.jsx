@@ -41,7 +41,7 @@ function Somefacts() {
               />
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-6 secondcolumn">
             <Somfactcard
               icon={"fa-solid fa-star"}
               number="1234"

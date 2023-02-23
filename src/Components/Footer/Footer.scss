@@ -1,0 +1,84 @@
+.footer_container {
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  padding: 5rem;
+
+  .row {
+    justify-content: center;
+    .col {
+      margin-bottom: 3rem;
+
+      h4 {
+        font-weight: 700;
+      }
+
+      .btn.btn-link {
+        text-decoration: none;
+        color: var(--light);
+        transition: 0.5s;
+        padding-left: 0 !important;
+      }
+
+      .btn.btn-link::before {
+        position: relative;
+        content: "\f105";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        margin-right: 10px;
+      }
+
+      .btn.btn-link:hover {
+        letter-spacing: 1px;
+        box-shadow: none;
+        transition: 0.5s;
+      }
+
+      .btn-social {
+        margin-right: 6px;
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .footer_footer_container {
+    margin-top: 1.5rem;
+
+    .bottomwebsitelink,
+    .myportfoliolink {
+      text-decoration: none !important;
+      color: var(--light);
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 600px) {
+  .footer_container {
+    .row {
+      flex-direction: column !important;
+
+      .col {
+        margin-bottom: 3rem;
+        padding-left: 1rem;
+      }
+    }
+
+    .footer_footer_container {
+      margin-top: 1.5rem;
+
+      .bottomwebsitelink,
+      .myportfoliolink {
+        text-decoration: none !important;
+        color: var(--light);
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@ import React from "react";
 import "../OurserviceCard/Ourservicecard.scss";
 import Slidingbutton from "../SlidingButton/Slidingbutton";
 
-function Ourservicecard({ title, image, text }) {
+function Ourservicecard({ title, image, text, btntext }) {
   return (
     <div className="ourservice_card">
       <div className="overflow-hidden">
@@ -10,7 +10,7 @@ function Ourservicecard({ title, image, text }) {
       </div>
       <h4>{title}</h4>
       <p>{text}</p>
-      <Slidingbutton buttonText={"Read More"} />
+      <Slidingbutton buttonText={btntext} />
     </div>
   );
 }

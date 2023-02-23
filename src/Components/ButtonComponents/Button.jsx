@@ -1,13 +1,18 @@
-import React from 'react';
+import React from "react";
 import "../ButtonComponents/Button.scss";
 
-
-function Button({title, type, onclick}) {
+export default function Button({ title, type, onclick }) {
   return (
     <button onClick={onclick} className={`default ${type}`}>
-        {title}
+      {title}
     </button>
-  )
+  );
 }
 
-export default Button
+export function Footerbtn({ type, title, onclick }) {
+  return (
+    <button onClick={onclick} className={`w-100 ${type}`}>
+      {title}
+    </button>
+  );
+}

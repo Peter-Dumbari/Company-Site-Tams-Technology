@@ -32,7 +32,7 @@ function Hero() {
                   </h5>
                   <h1 className="display-3 text-white mb-4">
                     #1 Place For Your{" "}
-                    <span className="primary_colour">Computer</span>
+                    <span className="primary_colour">Computer </span>
                     Solution
                   </h1>
                   <p className="fs-5 fw-medium text-white mb-4 pb-2">

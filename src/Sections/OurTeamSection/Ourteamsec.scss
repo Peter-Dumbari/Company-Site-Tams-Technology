@@ -1,81 +1,82 @@
-.pricingplan_container {
+.ourteam_container {
+  padding: 0 5rem 0 5rem;
   margin-bottom: 10rem;
-  padding: 0 6rem 0 6rem;
 
-  .header_part {
+  .header_section {
     text-align: center;
 
     h6 {
-      font-weight: 800;
+      font-weight: 700;
       color: var(--secondary);
     }
+
     h1 {
-      font-weight: 700;
+      font-weight: 800;
       color: var(--dark);
     }
   }
 }
 @media only screen and (max-width: 996px) {
-  .pricingplan_container {
-    margin-bottom: 10rem;
+  .ourteam_container {
     padding: 0 10% 0 10%;
+    margin-bottom: 10rem;
 
     .row {
       flex-wrap: wrap;
-
       .col {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2rem !important;
       }
     }
   }
 }
 @media only screen and (max-width: 768px) {
-  .pricingplan_container {
-    margin-bottom: 10rem;
+  .ourteam_container {
     padding: 0 15% 0 15%;
+    margin-bottom: 10rem;
 
-    .header_part {
+    .header_section {
       text-align: center;
 
       h6 {
-        font-weight: 800;
+        font-weight: 700;
         color: var(--secondary);
       }
+
       h1 {
-        font-weight: 700;
+        font-weight: 800;
         color: var(--dark);
       }
     }
+
     .row {
       flex-direction: column !important;
-
       .col {
-        margin-top: 1.5rem;
+        margin-bottom: 2rem !important;
       }
     }
   }
 }
-
 @media only screen and (max-width: 600px) {
-  .pricingplan_container {
+  .ourteam_container {
+    padding: 0 1.5rem 0 1.5rem;
     margin-bottom: 10rem;
-    padding: 0 1rem 0 1rem;
 
-    .header_part {
+    .header_section {
       text-align: center;
 
       h6 {
-        font-weight: 800;
+        font-weight: 700;
         color: var(--secondary);
       }
+
       h1 {
-        font-weight: 700;
+        font-weight: 800;
         color: var(--dark);
       }
     }
+
     .row {
       flex-direction: column !important;
-
       .col {
         margin-top: 1.5rem;
       }

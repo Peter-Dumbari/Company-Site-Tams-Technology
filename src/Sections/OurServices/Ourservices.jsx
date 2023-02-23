@@ -13,60 +13,64 @@ function Ourservices() {
         <h1 className="mb-5">Explore Our Services</h1>
       </div>
       <div className="row">
-        <div className="col">
+        <div className="col col-md-4">
           <Ourservicecard
             title={"Air Freight"}
             text={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ut?"
             }
             image={image1}
+            btntext="Read More"
           />
         </div>
-        <div className="col">
+        <div className="col col-md-4">
           <Ourservicecard
             title={"Ocean Freight"}
             text={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ut?"
             }
             image={image2}
+            btntext="Read More"
           />
         </div>
-        <div className="col">
+        <div className="col col-md-4">
           <Ourservicecard
             title={"Road Freight"}
             text={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ut?"
             }
             image={image3}
+            btntext="Read More"
           />
         </div>
-      </div>
-      <div className="row row_2">
-        <div className="col">
+        <div className="col col-md-4">
           <Ourservicecard
             title={"Air Freight"}
             text={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ut?"
             }
             image={image1}
+            btntext="Read More"
           />
         </div>
-        <div className="col">
+        <div className="col col-md-4">
           <Ourservicecard
             title={"Ocean Freight"}
             text={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ut?"
             }
             image={image2}
+            btntext="Read More"
           />
         </div>
-        <div className="col">
+        <div className="col col-md-4">
           <Ourservicecard
             title={"Road Freight"}
             text={
               "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ut?"
             }
             image={image3}
+            btntext="Read More"
           />
         </div>
       </div>

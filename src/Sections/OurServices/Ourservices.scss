@@ -1,25 +1,100 @@
-.ourservice_container{
+.ourservice_container {
+  margin-bottom: 10rem;
+  padding: 0 6rem 0 6rem;
+
+  .header_text {
+    text-align: center;
+
+    h6 {
+      color: var(--secondary);
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    h1 {
+      font-weight: 700;
+      color: var(--dark);
+    }
+  }
+
+  .row {
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+
+    .col {
+      margin-bottom: 2rem;
+    }
+  }
+}
+@media only screen and (max-width: 992px) {
+  .ourservice_container {
     margin-bottom: 10rem;
-    padding: 0 6rem 0 6rem;
+    padding: 0 10% 0 10%;
+    width: 100%;
 
-    .header_text{
-        text-align: center;
-        
-        h6{
-            color: var(--secondary);
-            font-weight: 800;
-            margin-bottom: .5rem;
-        }
-
-        h1{
-            font-weight: 700;
-            color: var(--dark);
-        }
+    .row {
+      width: 100%;
+      flex-direction: row !important;
+      .col {
+        width: 50%;
+        flex-direction: row !important;
+        margin-top: 1.5rem;
+        padding: 0 !important;
+      }
     }
 
-    .row{
-        justify-content: center !important;
-        align-items: center !important;
-        margin-bottom: 1.5rem;
+    .row_2 {
+      width: 100%;
+      .col {
+        width: 100%;
+      }
     }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .ourservice_container {
+    margin-bottom: 10rem;
+    padding: 0 15% 0 15%;
+    width: 100%;
+
+    .row {
+      width: 100%;
+      flex-direction: column !important;
+      .col {
+        flex-direction: row !important;
+        margin-top: 1.5rem;
+        width: 100%;
+      }
+    }
+
+    .row_2 {
+      width: 100%;
+      .col {
+        width: 100%;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .ourservice_container {
+    margin-bottom: 10rem;
+    padding: 0 1rem 0 1rem;
+
+    .row {
+      width: 100%;
+      flex-direction: column !important;
+      .col {
+        width: 100%;
+        flex-direction: row !important;
+        margin-top: 1.5rem;
+      }
+    }
+
+    .row_2 {
+      width: 100%;
+      .col {
+        width: 100%;
+      }
+    }
+  }
 }

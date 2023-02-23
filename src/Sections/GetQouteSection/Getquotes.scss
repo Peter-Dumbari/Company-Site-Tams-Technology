@@ -1,0 +1,143 @@
+:root {
+  --primary: #ff3e41;
+  --secondary: #51cfed;
+  --light: #f8f2f0;
+  --dark: #060315;
+}
+
+.getqoute_container {
+  padding: 0 5rem 0 5rem;
+  margin-bottom: 10rem;
+
+  .description_column {
+    width: 45%;
+    h6 {
+      color: var(--secondary);
+      font-weight: 800;
+    }
+
+    h1 {
+      font-weight: 800;
+      color: var(--dark);
+    }
+  }
+  .icon_box {
+    .icon {
+      background-color: var(--danger);
+      color: var(--light) !important;
+    }
+    h6 {
+      color: var(--dark) !important;
+      font-weight: 800;
+      font-size: 90%;
+    }
+
+    h3 {
+      color: var(--danger);
+      font-weight: 800;
+    }
+  }
+
+  .form_column {
+    background-color: var(--light);
+    padding: 2.5rem;
+    width: 55%;
+
+    .forms {
+      margin-bottom: 1.2rem;
+      .row {
+        margin-bottom: 1.2rem;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 996px) {
+  .getqoute_container {
+    padding: 0 10% 0 10%;
+    margin-bottom: 10rem;
+    flex-direction: column !important;
+    width: 100%;
+
+    .description_column {
+      width: 100%;
+    }
+
+    .form_column {
+      padding: 2.5rem;
+      width: 100%;
+      margin: 4rem 0 0 0 !important;
+
+      .forms {
+        margin-bottom: 1.2rem;
+        .row {
+          margin-bottom: 1.2rem;
+          flex-direction: column !important;
+
+          .col {
+            margin-top: 1rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  .getqoute_container {
+    padding: 0 15% 0 15%;
+    margin-bottom: 10rem;
+    flex-direction: column !important;
+    width: 100%;
+
+    .description_column {
+      width: 100%;
+    }
+
+    .form_column {
+      padding: 2.5rem;
+      width: 100%;
+      margin: 4rem 0 0 0 !important;
+
+      .forms {
+        margin-bottom: 1.2rem;
+        .row {
+          margin-bottom: 1.2rem;
+          flex-direction: column !important;
+
+          .col {
+            margin-top: 1rem !important;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 600px) {
+  .getqoute_container {
+    padding: 0 1.5rem 0 1.5rem;
+    margin-bottom: 10rem;
+    flex-direction: column !important;
+
+    .description_column {
+      width: 100%;
+    }
+
+    .form_column {
+      padding: 2.5rem;
+      width: 100%;
+      margin: 2rem 0 0 0 !important;
+
+      .forms {
+        margin-bottom: 1.2rem;
+        .row {
+          margin-bottom: 1.2rem;
+          flex-direction: column !important;
+
+          .col {
+            margin-top: 1rem !important;
+          }
+        }
+      }
+    }
+  }
+}

@@ -32,21 +32,21 @@ function Pricingplan() {
         <h1 className="mb-5">Perfect Pricing Plan</h1>
       </div>
       <div className="row">
-        <div className="col">
+        <div className="col col-md-4 col-sm-12">
           <Pricecard
             items={firstCarditems}
             pricename="Basic Plan"
             amount={"490.0"}
           />
         </div>
-        <div className="col">
+        <div className="col col-md-4 col-sm-12">
           <Pricecard
             items={secondCarditems}
             pricename="Standard Plan"
             amount={"990.0"}
           />
         </div>
-        <div className="col">
+        <div className="col col-md-4 col-sm-12">
           <Pricecard
             items={thirdCarditems}
             pricename="Advance Plan"
