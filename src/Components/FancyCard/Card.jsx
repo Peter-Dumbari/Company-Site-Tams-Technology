@@ -3,19 +3,39 @@ import Slidingbutton, {
   Slidingmediabutton,
 } from "../SlidingButton/Slidingbutton";
 import "../FancyCard/Card.scss";
+import { Waypoint } from "react-waypoint";
 
-export default function Card({ title, image, text, btntext, any }) {
+export default function Card({ title, image, text, btntext, any, delay }) {
+  const [animate, setAnimate] = React.useState(false);
+  function handleWaypointEnter() {
+    console.log("Waypoint entered aboutsection");
+    setAnimate(true);
+  }
+
+  function handleWaypointLeave() {
+    console.log("Waypoint left aboutsection");
+  }
   return (
-    <div className="cardy">
-      <div className="overflow-hidden">
-        <img src={image} alt="card_image" className="ourservice_card_image" />
-      </div>
-      <h4>{title}</h4>
-      <span className="anytext">{any}</span>
-      <p>{text}</p>
+    <Waypoint
+      fireOnRapidScroll={false}
+      onEnter={handleWaypointEnter}
+      onLeave={handleWaypointLeave}
+      topOffset="700.8828125px"
+      bottomOffset="1110.671875px">
+      <div
+        className={`cardy ${
+          animate && `animate__animated animate__fadeInUp ${delay}`
+        }`}>
+        <div className="overflow-hidden">
+          <img src={image} alt="card_image" className="ourservice_card_image" />
+        </div>
+        <h4>{title}</h4>
+        <span className="anytext">{any}</span>
+        <p>{text}</p>
 
-      <Slidingmediabutton />
-    </div>
+        <Slidingmediabutton />
+      </div>
+    </Waypoint>
   );
 }
 

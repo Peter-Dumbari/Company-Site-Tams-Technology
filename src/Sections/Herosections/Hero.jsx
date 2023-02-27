@@ -30,10 +30,10 @@ function Hero() {
                   <h5 className="text-white text-uppercase mb-3">
                     Computer Sales and Repairs
                   </h5>
-                  <h1 className="display-3 text-white mb-4">
-                    #1 Place For Your{" "}
+                  <h1 className="display-3 text-white mb-4 animate__animated animate__slideInDown">
+                    #1 Place For All Your
                     <span className="primary_colour">Computer </span>
-                    Solution
+                    Deals
                   </h1>
                   <p className="fs-5 fw-medium text-white mb-4 pb-2">
                     Vero elitr justo clita lorem. Ipsum dolor at sed stet sit
@@ -41,14 +41,14 @@ function Hero() {
                     sea elitr.
                   </p>
                   <div className="row">
-                    <div className="col">
+                    <div className="col animate__animated animate__slideInLeft">
                       <Button
                         title="Read More"
                         type={"danger"}
                         onclick={buttonclick}
                       />
                     </div>
-                    <div className="col">
+                    <div className="col animate__animated animate__slideInRight">
                       <Button title="Free Quote" type={"primary"} />
                     </div>
                   </div>
