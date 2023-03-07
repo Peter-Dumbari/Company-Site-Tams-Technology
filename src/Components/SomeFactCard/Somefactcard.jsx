@@ -4,6 +4,7 @@ import "../SomeFactCard/Somefactcard.scss";
 
 function Somfactcard({ icon, number, text, type }) {
   const [animate, setAnimate] = React.useState(false);
+
   function handleWaypointEnter() {
     setAnimate(true);
   }

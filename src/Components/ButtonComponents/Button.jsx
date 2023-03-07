@@ -1,10 +1,13 @@
 import React from "react";
 import "../ButtonComponents/Button.scss";
 
-export default function Button({ title, type, onclick }) {
+export default function Button({ title, type, onclick, icon }) {
   return (
     <button onClick={onclick} className={`default ${type}`}>
-      {title}
+      <div className="d-flex">
+        {title}
+        {icon && <div className="icon_container">{icon}</div>}
+      </div>
     </button>
   );
 }

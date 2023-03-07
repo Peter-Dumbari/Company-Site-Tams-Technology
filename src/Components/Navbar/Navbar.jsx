@@ -42,22 +42,35 @@ function Navbar() {
           data-bs-target="#navbarCollapse">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div className="collapse navbar-collapse" id="navbarCollapse">
           <div className="navbar-nav ms-auto p-4 p-lg-0">
             <NavLink to="/" className="nav-item nav-link">
               Home
             </NavLink>
-            <NavLink to="/about" className="nav-item nav-link">
-              About
-            </NavLink>
-            <NavLink to="/service" className="nav-item nav-link">
-              Service
+            <NavLink to="/shoppingpage" className="nav-item nav-link">
+              Market Place
             </NavLink>
             <div className="nav-item dropdown">
-              <a
-                href="#"
-                className="nav-link dropdown-toggle"
-                data-bs-toggle="dropdown">
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                Services
+              </a>
+              <div class="dropdown-menu fade-up m-0">
+                <Link to="#" className="dropdown-item">
+                  Computer Repairs
+                </Link>
+                <Link to="#" className="dropdown-item">
+                  Software Installation
+                </Link>
+                <Link to="#" className="dropdown-item">
+                  Web & App Development
+                </Link>
+                <Link to="#" className="dropdown-item">
+                  Others
+                </Link>
+              </div>
+            </div>
+            <div className="nav-item dropdown">
+              <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown">
                 Pages
               </a>
               <div class="dropdown-menu fade-up m-0">
@@ -76,13 +89,10 @@ function Navbar() {
                 <Link to="#" className="dropdown-item">
                   Testimonial
                 </Link>
-                <Link to="#" className="dropdown-item">
-                  404 Page
-                </Link>
               </div>
             </div>
             <NavLink to="/contact" className="nav-item nav-link">
-              Contact
+              Contact us
             </NavLink>
           </div>
           <h4 className="m-0 pe-lg-5 d-none d-lg-block">

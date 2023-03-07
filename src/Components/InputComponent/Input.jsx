@@ -28,9 +28,7 @@ export function Textarea({ placeholder }) {
 export function SelectInput({ title, options }) {
   return (
     <select className="selectcomponent">
-      <option selected className="selected">
-        {title}
-      </option>
+      <option className="selected">{title}</option>
       {options &&
         options.map(({ id, value, option }) => (
           <option value={value} key={id}>

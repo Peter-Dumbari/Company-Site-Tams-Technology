@@ -5,6 +5,19 @@ import { Waypoint } from "react-waypoint";
 
 function Somefacts() {
   const [animate, setAnimate] = React.useState(false);
+  const [number, setNumber] = React.useState(0);
+
+  const defaultCounter = 1234;
+
+  React.useEffect(() => {
+    if (number < defaultCounter) {
+      const interval = setInterval(() => {
+        setNumber((number) => number + 1);
+      });
+      return () => clearInterval(interval);
+    }
+  }, [number]);
+
   function handleWaypointEnter() {
     console.log("Waypoint entered aboutsection");
     setAnimate(true);
@@ -48,7 +61,7 @@ function Somefacts() {
               <div className={`first_row_first ${animate && ""}`}>
                 <Somfactcard
                   icon={"fa fa-users"}
-                  number="1234"
+                  number={number}
                   text="Happy Clients"
                   type={"danger_card"}
                 />
@@ -56,7 +69,7 @@ function Somefacts() {
               <div className="first_row_second">
                 <Somfactcard
                   icon={"fa fa-ship"}
-                  number="1234"
+                  number={number}
                   text="Sharp Deliveries"
                   type={"primary_card"}
                 />
@@ -65,7 +78,7 @@ function Somefacts() {
             <div className="col-6 secondcolumn">
               <Somfactcard
                 icon={"fa-solid fa-star"}
-                number="1234"
+                number={number}
                 text={"Customer Review"}
                 type={"success_card"}
               />

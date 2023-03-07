@@ -1,0 +1,68 @@
+.shophero_container {
+  width: 100%;
+  padding: 0 3rem 3rem 3rem !important;
+  margin: 0 !important;
+  height: 80vh;
+  overflow: hidden;
+
+  .first_column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .shopheader_text {
+      h6 {
+        font-size: 16px;
+        letter-spacing: 0.03em;
+        color: var(--tp-text-1);
+        position: relative;
+        padding-left: 13px;
+        display: inline-block;
+        line-height: 1.12;
+        margin-bottom: 11px;
+        animation-delay: 0.3s;
+        animation-duration: 1s;
+      }
+      h6::after {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: -2px;
+        width: 2px;
+        height: 37px;
+        background-color: var(--primary);
+      }
+
+      h3 {
+        font-weight: 500;
+        font-size: 80px;
+        line-height: 1.05;
+        letter-spacing: -0.01em;
+        margin-bottom: 45px;
+        animation-delay: 0.5s;
+        animation-duration: 1s;
+      }
+
+      .btn_container {
+        width: 35%;
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  .second_column {
+    img {
+      opacity: 99;
+      animation: rotate 10s linear infinite;
+    }
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,202 @@
+.couponcard_container {
+  border: 1px solid #eaeaef;
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .first_column {
+    display: flex;
+    flex-direction: row !important;
+    width: 70%;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    .product_coupon_thumb_container {
+      width: 50% !important;
+      display: flex;
+      align-items: center;
+      background-color: rgba(0, 179, 255, 0.375);
+      text-align: center;
+      margin-right: 20px;
+      flex: 1;
+      margin: 15px;
+
+      .coupon_thumb {
+        width: 100%;
+        padding: 5px;
+      }
+    }
+    .product_coupon_content {
+      padding: 20px 0 20px 0 !important;
+      .product_coupon_title {
+        font-weight: 700;
+        font-size: 20px;
+      }
+
+      .product_coupon_offer {
+        font-size: 20px;
+        color: rgb(90, 89, 89);
+        font-weight: 600;
+
+        span {
+          color: red;
+          margin-right: 7px;
+        }
+      }
+      .product_coupon_countdown {
+        .product_coupon_inner_container {
+          ul {
+            display: inline-flex !important;
+            margin: 0;
+            padding: 0;
+
+            li {
+              list-style: none;
+              position: relative;
+              padding: 0 15px;
+            }
+
+            li:nth-child(1) {
+              padding: 0 15px 0 0 !important;
+            }
+          }
+
+          ul li:not(:last-child):after {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 1px;
+            height: 17px;
+            content: "";
+            background-color: #ebebeb;
+          }
+        }
+      }
+    }
+  }
+
+  .second_column {
+    width: 30%;
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100% !important;
+
+    .container_date_of_promo {
+      background-color: rgba(0, 128, 128, 0.1);
+      border: 2px dashed rgba(0, 128, 128, 0.4);
+      padding: 10px;
+      font-size: 13px;
+      color: teal;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-align: center;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+  }
+
+  .divider {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 25%;
+    display: inline-block;
+    width: 2px;
+    height: 100%;
+    background-color: transparent;
+    border-left: 2px dashed #ebebeb;
+    z-index: 1;
+  }
+
+  .divider::before {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    bottom: auto;
+    top: -13px;
+    right: 100%;
+    z-index: 1;
+    transform: translateX(50%) scaleY(-1);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: 1px solid #eee;
+    border-bottom: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  }
+
+  .divider::after {
+    position: absolute;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-color: #fff;
+    bottom: -13px;
+    top: auto;
+    right: 100%;
+    z-index: 1;
+    transform: translateX(50%) scaleY(1);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    border: 1px solid #eee;
+    border-bottom: 0;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  }
+
+  .inneritems {
+    display: flex;
+    justify-content: space-between;
+
+    .green {
+      color: green;
+      margin: 0 5px 0 5px;
+    }
+    .red {
+      color: var(--primary);
+      margin: 0 5px 0 5px;
+    }
+
+    .coupon_more_detail {
+      position: relative;
+      transition: 2s;
+
+      .coupon_tooltip_container {
+        position: absolute;
+        bottom: calc(100% + 20px);
+        min-width: 286px;
+        padding: 13px 20px 15px;
+        box-shadow: 0 10px 30px rgb(4 11 17 / 14%);
+        opacity: 0;
+        z-index: 9;
+        right: -90%;
+        visibility: hidden;
+        background-color: #fff;
+      }
+      .coupon_tooltip_container::after {
+        position: absolute;
+        content: "";
+        right: 10px;
+        bottom: 0;
+        width: 18px;
+        height: 18px;
+        background-color: #fff;
+
+        transform: rotate(45deg) translateY(50%);
+      }
+      .icon {
+        cursor: pointer;
+      }
+    }
+    .coupon_more_detail:hover .coupon_tooltip_container {
+      visibility: visible;
+      opacity: 2 !important;
+      transition: 1.5s;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.dealday_container {
+  margin: 3rem 3rem 5rem 3rem;
+  padding: 0 !important;
+
+  .dealdayheader {
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 0 !important;
+
+    .dealheader_button {
+      width: 30%;
+      padding: 0 !important;
+    }
+
+    .section_title {
+      font-size: 30px;
+      line-height: 1;
+      position: relative;
+      padding-left: 16px;
+      font-weight: bold;
+    }
+
+    .section_title::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 3px;
+      background-color: var(--primary);
+    }
+  }
+  .row {
+    .col-6 {
+      margin-bottom: 2rem;
+    }
+  }
+}

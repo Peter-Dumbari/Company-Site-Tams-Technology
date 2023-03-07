@@ -1,0 +1,38 @@
+.shopnav {
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  width: 100%;
+
+  background: transparent;
+  .icon_container {
+    width: 15%;
+    justify-content: space-between;
+
+    .bdge {
+      position: relative;
+      cursor: pointer;
+      span {
+        position: absolute;
+        top: -2px;
+        background-color: var(--primary);
+        left: 13px;
+        bottom: 10px;
+        display: flex;
+        align-items: center;
+        padding: 9px;
+        color: #ffff;
+        border-radius: 50px;
+        width: 15px;
+        height: 15px;
+        justify-content: center;
+        font-size: small;
+        font-weight: bold;
+        border: 1px solid #ffff;
+      }
+    }
+    .icon {
+      font-size: 1.4rem !important;
+      opacity: 0.6;
+      cursor: pointer;
+    }
+  }
+}

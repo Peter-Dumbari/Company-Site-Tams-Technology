@@ -1,0 +1,18 @@
+.pageheader_container {
+  h3 {
+    font-size: 30px;
+    line-height: 1;
+    position: relative;
+    padding-left: 16px;
+    font-weight: bold;
+  }
+  h3::after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--primary);
+  }
+}
