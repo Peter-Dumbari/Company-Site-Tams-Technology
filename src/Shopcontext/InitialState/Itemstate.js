@@ -1,5 +1,71 @@
+import image from "../../Assets/Images/ipadmini.png";
+import imagerelated from "../../Assets/Images/macbook2012.png";
+import image3 from "../../Assets/Images/macbookcharger.png";
+
 export default {
   cartitems: [],
-  totalItems: 0,
   totalPrice: 0,
+  items: [
+    {
+      id: 0,
+      image: image,
+      name: "Iwatch 2 2020",
+      discount: "5%",
+      oldprice: "$120",
+      itemsIdicator: 1,
+      newPrice: 0,
+      newprice: 100,
+      promo: true,
+      link: "/item_detail",
+      desc: "Applicable Model:With anti-drop and anti-vibration flip case cover tablet stand, you can stand the tablet up at angles for the best reading, watching movies, viewing and typing experience Magnetic Expandibility: Case is embeded with a lining of magnets to pair with accessories for expanded function Premium Materials: Made from high quality PU Leather, gives a smooth delicate texture on the outside and shock absorption on the inside, soft interior never scratches or hurts your screen",
+      addedtocart: false,
+      background: "purplebg",
+      quantity: 1,
+      related: [
+        {
+          id: 0,
+          name: "Ipadmini",
+          image: imagerelated,
+          oldprice: "$30",
+          newprice: 100,
+          discount: "-1%",
+          quantity: 1,
+          promo: true,
+        },
+      ],
+    },
+    {
+      id: 1,
+      image: imagerelated,
+      name: "Macbook",
+      discount: "2%",
+      oldprice: "$45",
+      newprice: 100,
+      promo: false,
+      itemsIdicator: 1,
+      link: "/item_detail",
+      background: "greenbg",
+      addedtocart: false,
+      newPrice: 0,
+      quantity: 1,
+
+      desc: "Full Protection while staying lightweight and portable, allow full access to all features (buttons, speakers, cameras). Stable Stand : With anti-drop and anti-vibration flip case cover tablet stand, you can stand the tablet up at angles for the best reading, watching movies, viewing and typing experience Magnetic Expandibility: Case is embeded with a lining of magnets to pair with accessories for expanded function Premium Materials: Made from high quality PU Leather, gives a smooth delicate texture on the outside and shock absorption on the inside, soft interior never scratches or hurts your screen",
+    },
+    {
+      id: 2,
+      image: image3,
+      name: "Iwatch 1 Mini",
+      itemsIdicator: 1,
+      discount: "2%",
+      oldprice: "$45",
+      newprice: 100,
+      promo: false,
+      link: "/item_detail",
+      background: "dangerbg",
+      newPrice: 0,
+      addedtocart: false,
+      quantity: 1,
+      desc: "Full Protection while staying lightweight and portable, allow full access to all features (buttons, speakers, cameras). Stable Stand : With anti-drop and anti-vibration flip case cover tablet stand, you can stand the tablet up at angles for the best reading, watching movies, viewing and typing experience Magnetic Expandibility: Case is embeded with a lining of magnets to pair with accessories for expanded function Premium Materials: Made from high quality PU Leather, gives a smooth delicate texture on the outside and shock absorption on the inside, soft interior never scratches or hurts your screen",
+    },
+  ],
 };

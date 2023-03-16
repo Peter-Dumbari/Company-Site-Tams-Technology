@@ -5,11 +5,12 @@ import Backtotop from "./Components/BacktotopComponent/Backtotop";
 import "animate.css";
 import Loader from "./Components/Loader/Loader";
 import GlobalProvider from "./Shopcontext/Provider";
+import Cartitems from "./ShopSections/CartItems/Cartitems";
 
 function App() {
   const Landingpage = lazy(() => import("./Pages/LandingPage/Landingpage"));
   const ShoppingPage = lazy(() => import("./Pages/Shop/Shop"));
-  const ItemDetail = lazy(() => import("./Pages/Detailitem/Detailitem"));
+  const ItemDetail = lazy(() => import("./ShopSections/Detailitem/Detailitem"));
 
   return (
     <GlobalProvider>
@@ -45,6 +46,7 @@ function App() {
           />
         </Routes>
         <Backtotop />
+        <Cartitems />
       </Router>
     </GlobalProvider>
   );

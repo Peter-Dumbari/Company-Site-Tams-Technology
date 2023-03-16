@@ -1,3 +1,8 @@
 .slidingitems_container {
-  padding: 7rem 3rem 5rem 3rem;
+  padding: 7rem 4rem 5rem 4rem;
+
+  .owl-item {
+    margin: 0 1rem !important;
+    width: 260px !important;
+  }
 }

@@ -2,14 +2,18 @@
   text-decoration: none;
   color: #000;
 }
+.link_classname:hover {
+  color: #000;
+}
 
 .animatedcard_container {
   position: relative;
+  height: 90%;
 
   .image_container {
     background-color: rgba(236, 236, 236, 0.487);
     padding: 4rem;
-    height: 400px;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,7 +28,7 @@
 
   h3 {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 1rem;
     color: var(--dark);
   }
@@ -35,7 +39,8 @@
 
     .oldprice,
     .newprice {
-      font-weight: bold;
+      font-weight: 600;
+      font-size: 15px;
       opacity: 0.6;
     }
 
@@ -75,13 +80,14 @@
       background-color: #ffff;
       border: none;
       padding: 0.7rem;
-      margin-bottom: 1rem;
       display: flex;
       justify-content: center;
+      margin-bottom: 7px;
       align-items: center;
-      width: 45px;
-      height: 45px;
+      width: 40px;
+      height: 40px;
       position: relative;
+      box-shadow: 0 1px 3px rgb(3 4 28 / 12%);
 
       .product-action-tooltip {
         position: absolute;
@@ -134,7 +140,7 @@
     transition: 0.5s;
     position: absolute;
     width: 100%;
-    bottom: -15%;
+    bottom: -20%;
     cursor: pointer;
 
     .items {

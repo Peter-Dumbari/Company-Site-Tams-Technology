@@ -5,29 +5,30 @@ import "./Generalstyles.scss";
 import { GlobalContext } from "../../Shopcontext/Provider";
 
 function Lastedproduction() {
-  const { Toprateditems } = useContext(GlobalContext);
-  console.log("Toprateditems", Toprateditems);
+  const {
+    items: { items },
+  } = useContext(GlobalContext);
   return (
     <div className="lastedproduction row">
-      {Toprateditems &&
-        Toprateditems.map(
-          (data) => (
-            <div className="col-4" key={data.id}>
-              <Animatedcard
-                carddiscount={data.discount}
-                cardname={data.name}
-                cardimage={data.image}
-                oldprice={data.oldprice}
-                newprice={data.newprice}
-                sale={data.promo}
-              />
-            </div>
-          )
-
-          // (id, image, discount, name, oldprice, newprice, promo) => (
-
-          // )
-        )}
+      {items &&
+        items.map((data) => (
+          <div className="col-3" key={data.id}>
+            <Animatedcard
+              carddiscount={data.discount}
+              cardname={data.name}
+              cardimage={data.image}
+              oldprice={data.oldprice}
+              newprice={data.newprice}
+              sale={data.promo}
+              link={data.link}
+              id={data.id}
+              addedtocart={data.addedtocart}
+              Quantity={items.quantity}
+              quantity={items.quantity}
+              newPrice={items.newPrice}
+            />
+          </div>
+        ))}
     </div>
   );
 }

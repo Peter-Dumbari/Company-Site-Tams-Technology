@@ -16,6 +16,7 @@ function Dealday() {
       title: "Friday Promo",
       date: "June 12",
       status: false,
+      bgcolor: "blue",
     },
     {
       id: 1,
@@ -23,6 +24,7 @@ function Dealday() {
       title: "Black Friday",
       date: "February 28",
       status: true,
+      bgcolor: "greenbg",
     },
     {
       id: 1,
@@ -30,6 +32,7 @@ function Dealday() {
       title: "Black Friday",
       date: "February 28",
       status: true,
+      bgcolor: "dangerbg",
     },
     {
       id: 1,
@@ -37,6 +40,7 @@ function Dealday() {
       title: "Black Friday",
       date: "February 28",
       status: false,
+      bgcolor: "purplebg",
     },
   ];
   return (
@@ -51,7 +55,7 @@ function Dealday() {
         </div>
       </div>
       <div className="row">
-        {datas.map(({ id, image, title, date, status }) => (
+        {datas.map(({ id, image, title, date, status, bgcolor }) => (
           <div className="col-6" key={id}>
             <Couponcard
               image={image}
@@ -59,6 +63,7 @@ function Dealday() {
               offnumber={500}
               monthandday={date}
               status={status}
+              bgcolor={bgcolor}
             />
           </div>
         ))}

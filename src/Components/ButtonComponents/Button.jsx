@@ -19,3 +19,11 @@ export function Footerbtn({ type, title, onclick }) {
     </button>
   );
 }
+
+export function TooltipButton({ tooltipMessage, type, icon }) {
+  return (
+    <button className={`tooltipbtn ${type}`}>
+      {icon} <span className="tooltipmessage">{tooltipMessage}</span>
+    </button>
+  );
+}

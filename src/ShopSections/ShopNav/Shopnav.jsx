@@ -4,8 +4,11 @@ import "../ShopNav/Shopnav.scss";
 
 function Shopnav() {
   const {
-    items: { totalItems },
+    items: { cartitems, totalPrice },
   } = useContext(GlobalContext);
+
+  console.log("totalPrice", totalPrice);
+
   return (
     <nav className="navbar shopnav top">
       <div className="container-fluid collapse">
@@ -70,7 +73,11 @@ function Shopnav() {
             </svg>
             <span>0</span>
           </div>
-          <div className="bdge">
+          <div
+            className="bdge"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
             <svg
               width="21"
               height="20"
@@ -97,7 +104,7 @@ function Shopnav() {
                 stroke-linecap="round"
                 stroke-linejoin="round"></path>
             </svg>
-            <span>{totalItems}</span>
+            <span>{cartitems.length}</span>
           </div>
         </div>
       </div>

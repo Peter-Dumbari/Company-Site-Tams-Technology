@@ -1,7 +1,7 @@
 import React from "react";
 import "../CouponCard/Couponcard.scss";
 
-function Couponcard({ image, title, offnumber, monthandday, status }) {
+function Couponcard({ image, title, offnumber, monthandday, status, bgcolor }) {
   return (
     <div className="couponcard_container row">
       <span className="divider"></span>
@@ -10,7 +10,7 @@ function Couponcard({ image, title, offnumber, monthandday, status }) {
           <img
             src={image}
             alt="product_coupon_thumb"
-            className="coupon_thumb"
+            className={`coupon_thumb ${bgcolor}`}
           />
         </div>
         <div className="product_coupon_content">

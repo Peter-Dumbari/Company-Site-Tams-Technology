@@ -29,10 +29,16 @@
         color: var(--secondary) !important;
       }
       h5 {
-        font-weight: bolder;
+        line-height: 1.12;
+        margin-bottom: 11px;
+        animation-delay: 0.3s;
+        animation-duration: 1s;
+        font-size: 16px;
+        color: #525258 !important;
       }
       h1 {
         font-weight: bolder;
+        color: var(--dark);
       }
       .row {
         width: 62%;

@@ -3,14 +3,29 @@ import Animatedcard from "../../ShopComponents/AnimatedCard/Animatedcard";
 import "./Generalstyles.scss";
 import { GlobalContext } from "../../Shopcontext/Provider";
 function Toprated() {
-  const { Toprateditems } = useContext(GlobalContext);
+  const {
+    items: { items },
+  } = useContext(GlobalContext);
 
   return (
     <div className="row toprated_container">
-      {Toprateditems &&
-        Toprateditems.map(
-          ({ id, image, name, discount, oldprice, newprice, promo, link }) => (
-            <div className="col-4" key={id}>
+      {items &&
+        items.map(
+          ({
+            id,
+            image,
+            name,
+            discount,
+            oldprice,
+            newprice,
+            promo,
+            link,
+            Quantity,
+            quantity,
+            addedtocart,
+            newPrice,
+          }) => (
+            <div className="col-3" key={id}>
               <Animatedcard
                 cardimage={image}
                 cardname={name}
@@ -20,6 +35,10 @@ function Toprated() {
                 sale={promo}
                 link={link}
                 id={id}
+                addedtocart={addedtocart}
+                Quantity={Quantity}
+                quantity={quantity}
+                newPrice={newPrice}
               />
             </div>
           )

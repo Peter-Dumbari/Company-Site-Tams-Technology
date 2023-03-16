@@ -7,6 +7,7 @@ import Slidingitem from "../../ShopSections/SlidingItems/Slidingitem";
 import Footer from "../../Components/Footer/Footer";
 import Dealday from "../../ShopSections/Dealdaysection/Dealday";
 import Bottomboard from "../../ShopSections/DisplayBottomBoard/Bottomboard";
+import Cartitems from "../../ShopSections/CartItems/Cartitems";
 function Shop() {
   return (
     <>
